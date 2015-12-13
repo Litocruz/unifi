@@ -1,28 +1,27 @@
 {
-    "name": "unifi",
-    "description": "access unifi networking equipment for reboot, etc",
-    "version": "0.0.8",
-    "licenses": [{
-      "type": "MIT",
-      "url": "https://github.com/cymen/unifi/blob/master/LICENSE"
-    }],
+    "name": "restapi-unifi",
+    "description": "acceder a equipos unifi para gestionarlos",
+    "version": "0.0.1",
     "main": "lib/unifi.js",
     "engines": {
         "node": ">=0.6"
     },
     "dependencies": {
+      "express": "~4.7.1",
+      "mongoose": "~3.6.11",
+      "method-override": "^2.1.2",
+      "body-parser": "~1.12.0",
       "promise": "latest",
       "underscore": "latest"
     },
-    "devDependencies": {
-      "jasmine-node": "latest",
-      "nock": "latest"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/cymen/unifi"
-    },
-    "scripts": {
-        "test": "jasmine-node --forceexit spec/"
-    }
+    "keywords": [
+      "restapi",
+      "rest",
+      "api",
+      "nodejs",
+      "express",
+      "mongodb"
+    ],
+    "author": "litocruz",
+    "license": "BSD-2-Clause"
 }
